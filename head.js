@@ -1,3 +1,4 @@
+// barowing assertion funtion
 const assertEqual = function (actual, expected) {
 	if (actual === expected) {
 		console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -5,7 +6,7 @@ const assertEqual = function (actual, expected) {
 		console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 	}
 };
-
+// main function
 const head = (array) => {
 	if (array.length === 0) return null;
 	return array[0];
