@@ -19,5 +19,9 @@ const findKeyByValue = (object, value) => {
 // Test Cases
 assertEqual(findKeyByValue({ 1: 'one', 2: 'two', 3: 'three' }, 'one'), '1');
 assertEqual(findKeyByValue({ 1: 'one', 2: 'two', 3: 'three' }, 'three'), '3');
+assertEqual(
+	findKeyByValue({ 1: 'one', 2: 'two', 3: 'three' }, 'four'),
+	undefined
+);
 assertEqual(findKeyByValue({ 1: 'one', 2: 'two', 3: 'three' }, 'three'), '4');
 assertEqual(findKeyByValue({ 1: 'one', 2: 'two', 3: 'three' }, 'four'), '3');
