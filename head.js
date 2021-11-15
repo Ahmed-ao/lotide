@@ -1,22 +1,19 @@
-// // barowing assertion funtion
-// const assertEqual = function (actual, expected) {
-// 	if (actual === expected) {
-// 		console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-// 	} else {
-// 		console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-// 	}
-// };
-// // main function
-// const head = (array) => {
-// 	if (array.length === 0) return null;
-// 	return array[0];
-// };
+// barowing assertion funtion
+const assertEqual = function (actual, expected) {
+	if (actual === expected) {
+		console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+	} else {
+		console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+	}
+};
+// main function
+const head = (array) => {
+	if (array.length === 0) return null;
+	return array[0];
+};
 
-// // Test Cases
-// assertEqual(head([5, 6, 7]), 5);
-// assertEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
-// assertEqual(head([5, 6, 7]), 6);
-// assertEqual(head([5, 6, 7]), '5');
-console.log(friend);
-var friend = 'E.T.';
-console.log(friend);
+// Test Cases
+assertEqual(head([5, 6, 7]), 5);
+assertEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
+assertEqual(head([5, 6, 7]), 6);
+assertEqual(head([5, 6, 7]), '5');

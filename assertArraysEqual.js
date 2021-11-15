@@ -1,5 +1,5 @@
 // Main
-const assertArraysEqual = function (array, match) {
+const assertArraysEqual = (array, match) => {
 	if (
 		Array.isArray(array) &&
 		Array.isArray(match) &&
